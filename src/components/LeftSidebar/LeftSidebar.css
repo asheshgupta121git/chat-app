@@ -1,0 +1,128 @@
+.ls{
+    background: #c8c8c8;
+    color: #fff;
+    height: 75vh;
+}
+.ls-top{
+    padding: 20px;
+
+}
+.ls-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ls-nav .logo{
+    max-width: 140px;
+}
+.ls-nav .menu img{
+    max-height: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.ls-search {
+    background-color: #030b1cd4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    margin-top: 20px;
+}
+
+.ls-search img{
+    width: 18px;
+}
+.ls-search input{
+    background: transparent;
+    border: none;
+    outline:  none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.ls-search input::placeholder{
+    color: #c8c8c8;
+}
+
+.ls-list{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.friends{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.friends img{
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.friends div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.friends span{
+    color: #747373;
+    font-size: 11px;
+    font-weight: 550;
+}
+
+.friends:hover{
+    background-color: #000;
+}
+.friends:hover span{
+ color: #fff;
+}
+.friends:hover img{
+    border:2px solid #dfdcdcea;
+}
+
+/* =======================left sidebar dropdown=================== */
+.ls-nav .menu{
+    position: relative;
+    padding: 10px 0px;
+}
+
+.menu .sub-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 130px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color:#ceccccf8;
+    color: #000;
+
+    display: none;
+}
+
+.sub-menu hr{
+    border: none;
+    height: 1px;
+    background: #000;
+    margin: 8px 0px;
+}
+
+.sub-menu p{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.menu:hover .sub-menu{
+    display: block;
+}
